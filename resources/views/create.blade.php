@@ -9,8 +9,7 @@
     <div>
         Create a Product
     </div>
-    <form method="POST" action="{{ route('post-store') }}">
-    @csrf
+    <form method="POST" action="{{ route('post-store') }}" enctype="multipart/form-data">    @csrf
     @method('POST')
     <div>
         <label for="nama">Nama</label>

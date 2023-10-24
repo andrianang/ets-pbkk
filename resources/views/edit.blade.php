@@ -9,18 +9,19 @@
     <div>
         Edit a Product
     </div>
-    <form method="POST" action="{{ route('post-edit',  ['product' => $bef->id]) }}">
+    <form method="post" action="{{ route('post-edit',  ['product' => $post->id]) }}" enctype="multipart/form-data">   
     @csrf
-    @method('PATCH')
+    @method('patch')
+    <input type="hidden" name="id" value="{{ $post->id }}">
     <div>
         <label for="nama">Nama</label>
-        <input type="text" name="nama" id="nama" value="{{$bef->nama}}">
+        <input type="text" name="nama" id="nama" value="{{$post->nama}}">
     </div>
     <div class="flex">
         <label for="kategori_id">kategori</label>
         <select id="kategori_id" name="kategori_id">
-            @foreach($kategoris as $post)
-            <option value="{{ $post->id }}"><h1 class="text-1xl font-bold">{{ $post->nama }}</h1></option>
+            @foreach($kategoris as $test)
+            <option value="{{ $test->id }}"><h1 class="text-1xl font-bold">{{ $test->nama }}</h1></option>
             @endforeach
         </select>
     </div>
@@ -28,22 +29,22 @@
     <div>
         <label for="kondisi_id">kondisi</label>
         <select id="kondisi_id" name="kondisi_id">
-            @foreach($kondisis as $post)
-            <option value="{{ $post->id }}"><h1 class="text-1xl font-bold">{{ $post->nama }}</h1></option>
+            @foreach($kondisis as $test)
+            <option value="{{ $test->id }}"><h1 class="text-1xl font-bold">{{ $test->nama }}</h1></option>
             @endforeach
         </select>
     </div>
     <div>
         <label for="deskripsi">Deskripsi</label>
-        <textarea name="deskripsi" id="deskripsi">{{$bef->deskripsi}}</textarea>
+        <textarea name="deskripsi" id="deskripsi">{{$post->deskripsi}}</textarea>
     </div>
     <div>
         <label for="kecacatan">Kecacatan</label>
-        <textarea name="kecacatan" id="kecacatan">{{$bef->kecacatan}}</textarea>
+        <textarea name="kecacatan" id="kecacatan">{{$post->kecacatan}}</textarea>
     </div>
     <div>
         <label for="jumlah">Jumlah</label>
-        <input type="text" name="jumlah" id="jumlah" value="{{ $bef->jumlah }}">
+        <input type="text" name="jumlah" id="jumlah" value="{{ $post->jumlah }}">
     </div>
      <div class="mb-3">
             <label for="image" class="form-label">Image</label>

@@ -22,10 +22,11 @@ class DashboardController extends Controller
         return view('create', [ 'kategoris' => $kategoris, 'kondisis' => $kondisis]);
     }
 
-    public function edit(Product $post){
+    public function edit($postId){
+        $post = Product::find($postId);
         $kategoris = Kategori::all();
         $kondisis = Kondisi::all();
-        return view('edit', ['bef' => $post, 'kategoris' => $kategoris, 'kondisis' => $kondisis]);
+        return view('edit', ['post' => $post, 'kategoris' => $kategoris, 'kondisis' => $kondisis]);
     }
 
 }

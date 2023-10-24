@@ -23,27 +23,26 @@ class ProductController extends Controller
      */
     public function create(Request $request)
     {
-       
         if ($request->hasFile('image')) {
             $file = $request->file('image');
             $fileName = $file->getClientOriginalName();
-        
             $file->storeAs('public/images', $fileName);
-        }   
 
+            $post = new Product();
+            $post->nama = $request->nama;
+            $post->deskripsi = $request->deskripsi;
+            $post->kecacatan = $request->kecacatan;
+            $post->kategori_id = $request->kategori_id;
+            $post->kondisi_id = $request->kondisi_id;
+            $post->jumlah = $request->jumlah;
+            $post->image = $fileName;
 
-        $post = new Product();
-        $post->nama = $request->nama;
-        $post->deskripsi = $request->deskripsi;
-        $post->kecacatan = $request->kecacatan;
-        $post->kategori_id = $request->kategori_id;
-        $post->kondisi_id = $request->kondisi_id;
-        $post->jumlah = $request->jumlah;
-        $post->image =  $request->image;
+            $post->save();
 
-        $post->save();
-
-        return redirect()->route('dashboard')->with('success', 'Upload successfully');   
+            return redirect()->route('dashboard')->with('success', 'Upload successful');
+        } else {
+            return back()->with('error', 'No file uploaded');
+        }
     }
 
     /**
@@ -65,16 +64,23 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Product $request)
+    public function edit(Request $request)
     {
-        $post = Product::find($request->id);
-        $post->nama = $request->nama;
-        $post->deskripsi = $request->deskripsi;
-        $post->kecacatan = $request->kecacatan;
-        $post->kategori_id = $request->kategori_id;
-        $post->kondisi_id = $request->kondisi_id;
-        $post->jumlah = $request->jumlah;
-        $post->image =  $request->image;
+        if ($request->hasFile('image')) {
+            $file = $request->file('image');
+            $fileName = $file->getClientOriginalName();
+            $file->storeAs('public/images', $fileName);
+
+            $post = Product::find($request->id);
+            $post->nama = $request->nama;
+            $post->deskripsi = $request->deskripsi;
+            $post->kecacatan = $request->kecacatan;
+            $post->kategori_id = $request->kategori_id;
+            $post->kondisi_id = $request->kondisi_id;
+            $post->jumlah = $request->jumlah;
+            $post->image = $fileName;
+        }
+      
 
         $post->update();
         return redirect()->route('dashboard')->with('success', 'Product edited');

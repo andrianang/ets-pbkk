@@ -24,8 +24,8 @@
                 <p class="font-light text-lg">Jumlah: {{ $post->jumlah }}</p>
                 <p class="font-normal text-base">Deskripsi: {{ $post->deskripsi }}</p>
                 <p class="font-normal text-base">Kecacatan: {{ $post->kecacatan }}</p>
-                <!-- <img src="{{ asset('storage/images/'.$post->images) }}" class="img-fluid rounded-start"
-                        alt="{{ $post->nama }} Image" style="max-height: 300px;"> -->
+                <img src="{{ asset('storage/images/'.$post->image) }}" class="img-fluid rounded-start"
+                        alt="{{ $post->nama }} Image" style="max-height: 300px;">
             </div>
 
         </div>
