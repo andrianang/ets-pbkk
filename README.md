@@ -1,66 +1,22 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Auth
+![image](https://github.com/andrianang/ets-pbkk/assets/91018876/44e4a0f5-09f0-48b6-bd8e-0f3cd8c12e29)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Dashboard
+![Screenshot (171)](https://github.com/andrianang/ets-pbkk/assets/91018876/ee697ba1-0057-4825-a7da-ea5d9d3b08d4)
 
-## About Laravel
+Create Product
+![Screenshot (173)](https://github.com/andrianang/ets-pbkk/assets/91018876/5b5d5103-15a9-47b1-be8f-a58c8f6cd65f)
+![Screenshot (172)](https://github.com/andrianang/ets-pbkk/assets/91018876/51c4a010-2d54-4454-86bf-4e724baa8de8)
+![Screenshot (174)](https://github.com/andrianang/ets-pbkk/assets/91018876/69dff7ec-c252-4c3a-8aa6-fb0be3c17654)
+![Screenshot (182)](https://github.com/andrianang/ets-pbkk/assets/91018876/b9094e57-996c-40a8-a5ad-3bf1275a5eeb)
+![Screenshot (175)](https://github.com/andrianang/ets-pbkk/assets/91018876/b4b146dd-32dc-431d-8ae3-57a457591452)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Edit Product
+![Screenshot (178)](https://github.com/andrianang/ets-pbkk/assets/91018876/813d7e60-7f94-4efd-80e3-6d5eab2c0fb1)
+![Screenshot (177)](https://github.com/andrianang/ets-pbkk/assets/91018876/1b565a04-64f8-4463-b0f8-609c73e3024b)
+![Screenshot (176)](https://github.com/andrianang/ets-pbkk/assets/91018876/e9d0bc35-8118-4bb1-8e4d-a85b3073be07)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Delete Product
+![Screenshot (179)](https://github.com/andrianang/ets-pbkk/assets/91018876/e8b2cab0-c06e-447f-8a1b-24710020d9d1)
+![Screenshot (180)](https://github.com/andrianang/ets-pbkk/assets/91018876/83c28e82-7cf7-4c49-9690-4c9e18e634ec)
+![Screenshot (181)](https://github.com/andrianang/ets-pbkk/assets/91018876/c4b8c73e-c8cd-45b9-bce5-3cc036707e62)
